@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My 40g Protein Breakfast — Corgi Capital</title>
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+  <style>
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .photo-grid img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #DDD0BC;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .photo-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(90,50,20,0.2);
+    }
+    .nutrition-box {
+      background: #FDF6EC;
+      border: 1px solid #DDD0BC;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .nutrition-stat {
+      text-align: center;
+    }
+    .nutrition-stat .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: #E8732A;
+      line-height: 1;
+    }
+    .nutrition-stat .label {
+      font-size: 0.75rem;
+      color: #8B5E3C;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 0.25rem;
+    }
+    /* Lightbox */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    #lightbox-close {
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <svg class="logo-corgi" id="header-corgi" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="50" cy="65" rx="32" ry="20" fill="#E8732A"/>
+          <ellipse cx="50" cy="38" rx="22" ry="20" fill="#D4A843"/>
+          <polygon points="30,28 22,8 38,22" fill="#E8732A"/>
+          <polygon points="70,28 78,8 62,22" fill="#E8732A"/>
+          <ellipse cx="50" cy="46" rx="13" ry="9" fill="#FDF0D5"/>
+          <circle cx="43" cy="36" r="3" fill="#1A1208"/>
+          <circle cx="57" cy="36" r="3" fill="#1A1208"/>
+          <circle cx="44.5" cy="34.8" r="1" fill="white"/>
+          <circle cx="58.5" cy="34.8" r="1" fill="white"/>
+          <ellipse cx="50" cy="43" rx="4" ry="2.5" fill="#5C3A1E"/>
+          <path d="M46,47 Q50,51 54,47" stroke="#5C3A1E" stroke-width="1.5" fill="none"/>
+          <rect x="28" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+          <rect x="42" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+          <rect x="56" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+          <rect x="68" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+          <path d="M82,60 Q96,50 92,38" stroke="#D4A843" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <ellipse cx="50" cy="72" rx="18" ry="10" fill="#FDF0D5" opacity="0.6"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">Corgi Capital</span>
+          <span class="logo-subtitle">Mango's Family Office</span>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html">All Posts</a>
+        <a href="category-pack.html">🔗 The Pack</a>
+        <a href="category-picks.html">📈 Mango's Picks</a>
+        <a href="category-zoomies.html" class="active">🏃 Zoomies</a>
+        <a href="category-hydrant.html">🗽 Fire Hydrant</a>
+        <a href="category-muzzle.html">🦳 Grey Muzzle</a>
+        <a href="category-leash.html">🐾 Off Leash</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="post-page">
+
+    <div class="post-page-header">
+      <div class="post-meta" style="margin-bottom:1rem;">
+        <span class="post-category cat-zoomies">🏃 Zoomies</span>
+        <span class="post-date">February 20, 2026</span>
+      </div>
+      <h1>My 40g Protein Breakfast</h1>
+      <div class="paw-divider">🐾 🐾 🐾</div>
+    </div>
+
+    <div class="post-page-body">
+
+      <p>
+        I've been eating less overall since going on Wegovy, so have been trying to maximize
+        protein content at every meal. This week I've been experimenting with Hero Plain Bagels,
+        which somehow pack 19g of protein and only 4g net carbs. The macros on these things
+        are almost suspiciously good.
+      </p>
+
+      <p>
+        Combined with 2 eggs, half an avocado, and a little cheese, this makes for a genuinely
+        satisfying breakfast that hits around 500 calories, 40g of protein, and only 13g net carbs.
+      </p>
+
+      <div class="nutrition-box">
+        <div class="nutrition-stat"><div class="num">~500</div><div class="label">Calories</div></div>
+        <div class="nutrition-stat"><div class="num">40g</div><div class="label">Protein</div></div>
+        <div class="nutrition-stat"><div class="num">13g</div><div class="label">Net Carbs</div></div>
+      </div>
+
+      <p>
+        Highly processed? Perhaps. But it seems like a worthwhile tradeoff when the alternative
+        is skipping breakfast entirely or eating something that does nothing for satiety.
+        I'm posting the label so you can decide for yourself.
+      </p>
+
+      <div class="photo-grid">
+        <img src="/public/images/bagel-1.jpg" alt="Hero Classic Plain Bagels bag" onclick="openLightbox(this.src)" />
+        <img src="/public/images/bagel-2.jpg" alt="Hero Bagel nutrition label" onclick="openLightbox(this.src)" />
+        <img src="/public/images/bagel-3.jpg" alt="The finished breakfast plate" onclick="openLightbox(this.src)" />
+      </div>
+
+      <p>
+        The bagel toasts up well, holds its shape, and doesn't taste like cardboard —
+        which, for a 4g net carb bagel, is frankly a miracle. Recommend.
+      </p>
+
+    </div>
+
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid #DDD0BC;">
+      <a href="index.html" style="color:#E8732A;text-decoration:none;font-size:0.85rem;font-weight:600;">← Back to all posts</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p><strong>Corgi Capital</strong> — Dispatches from Mango &nbsp;|&nbsp; corgi.capital</p>
+    <p style="margin-top:0.5rem;opacity:0.5;">Not financial advice. Mango is a dog. Past performance does not predict future treats.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close" onclick="closeLightbox()">×</button>
+    <img id="lightbox-img" src="" alt="Full size photo" />
+  </div>
+
+  <div id="game-modal">
+    <h2>🐾 CORGI RUN</h2>
+    <p class="game-subtitle">Press SPACE or tap to jump. Avoid the Bloomberg terminals!</p>
+    <canvas id="game-canvas" width="600" height="200"></canvas>
+    <div id="game-score">Score: 0</div>
+    <button id="game-close">× Close</button>
+  </div>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="/src/game.js"></script>
+  <script>
+    document.getElementById('header-corgi').addEventListener('click', function(e) {
+      e.preventDefault();
+      openGame();
+    });
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('open');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>
