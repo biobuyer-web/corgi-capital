@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corgi Capital — Dispatches from Mango</title>
+  <meta name="description" content="Deep thoughts on markets, life in NYC, fitness, ageing, and whatever else Mango feels like. The world's most exclusive family office." />
+  <meta property="og:title" content="Corgi Capital — Dispatches from Mango" />
+  <meta property="og:description" content="Deep thoughts on markets, life in NYC, fitness, ageing, and whatever else Mango feels like." />
+  <meta property="og:image" content="public/images/mango-square.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="src/styles/main.css" />
+  <link rel="icon" type="image/svg+xml" href="public/images/favicon.svg" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <svg class="logo-corgi" id="header-corgi" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" title="Click for a surprise!">
+          <!-- Corgi body -->
+          <ellipse cx="50" cy="65" rx="32" ry="20" fill="#E8732A"/>
+          <!-- Corgi head -->
+          <ellipse cx="50" cy="38" rx="22" ry="20" fill="#D4A843"/>
+          <!-- Ears -->
+          <polygon points="30,28 22,8 38,22" fill="#E8732A"/>
+          <polygon points="70,28 78,8 62,22" fill="#E8732A"/>
+          <!-- Face mask (lighter snout) -->
+          <ellipse cx="50" cy="46" rx="13" ry="9" fill="#FDF0D5"/>
+          <!-- Eyes -->
+          <circle cx="43" cy="36" r="3" fill="#1A1208"/>
+          <circle cx="57" cy="36" r="3" fill="#1A1208"/>
+          <!-- Eye shine -->
+          <circle cx="44.5" cy="34.8" r="1" fill="white"/>
+          <circle cx="58.5" cy="34.8" r="1" fill="white"/>
+          <!-- Nose -->
+          <ellipse cx="50" cy="43" rx="4" ry="2.5" fill="#5C3A1E"/>
+          <!-- Mouth -->
+          <path d="M46,47 Q50,51 54,47" stroke="#5C3A1E" stroke-width="1.5" fill="none"/>
+          <!-- Legs -->
+          <rect x="28" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+          <rect x="42" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+          <rect x="56" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+          <rect x="68" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+          <!-- Tail -->
+          <path d="M82,60 Q96,50 92,38" stroke="#D4A843" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <!-- Belly patch -->
+          <ellipse cx="50" cy="72" rx="18" ry="10" fill="#FDF0D5" opacity="0.6"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">Corgi Capital</span>
+          <span class="logo-subtitle">Mango's Family Office</span>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html" class="active">All Posts</a>
+        <a href="category-pack.html">🔗 The Pack</a>
+        <a href="category-picks.html">📈 Mango's Picks</a>
+        <a href="category-zoomies.html">🏃 Zoomies</a>
+        <a href="category-hydrant.html">🗽 Fire Hydrant</a>
+        <a href="category-muzzle.html">🦳 Grey Muzzle</a>
+        <a href="category-leash.html">🐾 Off Leash</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <svg class="hero-corgi" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <!-- Corgi body -->
+      <ellipse cx="50" cy="65" rx="32" ry="20" fill="#E8732A"/>
+      <!-- Corgi head -->
+      <ellipse cx="50" cy="38" rx="22" ry="20" fill="#D4A843"/>
+      <!-- Ears -->
+      <polygon points="30,28 22,8 38,22" fill="#E8732A"/>
+      <polygon points="70,28 78,8 62,22" fill="#E8732A"/>
+      <!-- Face mask -->
+      <ellipse cx="50" cy="46" rx="13" ry="9" fill="#FDF0D5"/>
+      <!-- Eyes -->
+      <circle cx="43" cy="36" r="3" fill="#1A1208"/>
+      <circle cx="57" cy="36" r="3" fill="#1A1208"/>
+      <circle cx="44.5" cy="34.8" r="1" fill="white"/>
+      <circle cx="58.5" cy="34.8" r="1" fill="white"/>
+      <!-- Nose -->
+      <ellipse cx="50" cy="43" rx="4" ry="2.5" fill="#5C3A1E"/>
+      <!-- Mouth -->
+      <path d="M46,47 Q50,51 54,47" stroke="#5C3A1E" stroke-width="1.5" fill="none"/>
+      <!-- Legs -->
+      <rect x="28" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+      <rect x="42" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+      <rect x="56" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+      <rect x="68" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+      <!-- Tail wagging -->
+      <path d="M82,60 Q96,50 92,38" stroke="#D4A843" stroke-width="6" fill="none" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="-10 82 60" to="10 82 60" dur="0.4s" repeatCount="indefinite" additive="sum"/>
+      </path>
+      <!-- Belly patch -->
+      <ellipse cx="50" cy="72" rx="18" ry="10" fill="#FDF0D5" opacity="0.6"/>
+      <!-- Tiny tie (because he's a serious investor) -->
+      <path d="M48,58 L50,68 L52,58 L51,55 L49,55 Z" fill="#C0392B"/>
+    </svg>
+    <h1>Corgi <span>Capital</span></h1>
+    <p class="hero-tagline">"Small dog. Big thoughts. Excellent risk-adjusted returns."</p>
+    <p class="hero-description">
+      Dispatches from Mango — the world's smallest corgi and least regulated fund manager.
+      Market commentary, interesting reads, NYC dispatches, and whatever else is on his mind.
+    </p>
+  </section>
+
+  <!-- ============ CATEGORY BAR ============ -->
+  <div class="category-bar">
+    <div class="category-bar-inner">
+      <a href="index.html" class="cat-pill active"><span class="cat-emoji">🐾</span> All</a>
+      <a href="category-pack.html" class="cat-pill"><span class="cat-emoji">🔗</span> The Pack</a>
+      <a href="category-picks.html" class="cat-pill"><span class="cat-emoji">📈</span> Mango's Picks</a>
+      <a href="category-zoomies.html" class="cat-pill"><span class="cat-emoji">🏃</span> Zoomies</a>
+      <a href="category-hydrant.html" class="cat-pill"><span class="cat-emoji">🗽</span> Fire Hydrant</a>
+      <a href="category-muzzle.html" class="cat-pill"><span class="cat-emoji">🦳</span> Grey Muzzle</a>
+      <a href="category-leash.html" class="cat-pill"><span class="cat-emoji">🐾</span> Off Leash</a>
+    </div>
+  </div>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <div class="main-content">
+
+    <!-- FEED -->
+    <main class="feed">
+
+      <!-- POST 1: WSJ Uber Article -->
+      <article class="post-card cat-pack" id="uber-av">
+        <div class="post-meta">
+          <span class="post-category">🔗 The Pack</span>
+          <span class="post-date">February 19, 2026</span>
+        </div>
+        <h2><a href="post-uber-av.html">Is Uber Actually a Way to Play the AV Trend?</a></h2>
+        <p class="post-excerpt">
+          The robots are coming, and everyone seems to think that means Uber is toast. Mango is not so sure.
+          Autonomous vehicles are inevitable, but the question of who profits is more complicated than the bears think.
+          [Your commentary will go here — add a few sentences about your take on Uber and the AV trend.]
+        </p>
+        <a href="https://www.wsj.com/tech/uber-latest-victim-of-disruption-panic-still-has-role-in-robotaxis-7cb07d60?st=ooqusS&reflink=desktopwebshare_permalink" target="_blank" rel="noopener" class="post-link-preview">
+          <span class="post-link-icon">📰</span>
+          <span class="post-link-text">
+            <span class="post-link-title">Uber, Latest Victim of Disruption Panic, Still Has Role in Robotaxis</span>
+            <span class="post-link-domain">wsj.com — gift link</span>
+          </span>
+        </a>
+        <a href="post-uber-av.html" class="read-more">Read Mango's take →</a>
+      </article>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- About Mango -->
+      <div class="sidebar-widget about-widget">
+        <div class="mango-name">🐾 Mango</div>
+        <img src="public/images/mango-square.jpg" alt="Mango, CIO of Corgi Capital" style="width:80px;height:80px;border-radius:50%;border:3px solid #E8732A;display:block;margin:0 auto 1rem;object-fit:cover;object-position:center top;" />
+        <p>
+          Mango is a small corgi with <em>very</em> large opinions about markets.
+          As CIO of Corgi Capital — the world's most boutique family office — he manages
+          a concentrated portfolio of deep thoughts and occasionally correct predictions.
+        </p>
+        <p style="margin-top:0.75rem;font-size:0.8rem;color:#8B5E3C;">
+          <em>Not financial advice. Mango is a dog.</em>
+        </p>
+      </div>
+
+      <!-- Categories -->
+      <div class="sidebar-widget">
+        <h3>🗂️ Categories</h3>
+        <ul class="categories-list">
+          <li><a href="category-pack.html"><span>🔗 The Pack</span><span class="cat-count">1</span></a></li>
+          <li><a href="category-picks.html"><span>📈 Mango's Picks</span><span class="cat-count">0</span></a></li>
+          <li><a href="category-zoomies.html"><span>🏃 Zoomies</span><span class="cat-count">0</span></a></li>
+          <li><a href="category-hydrant.html"><span>🗽 Fire Hydrant</span><span class="cat-count">0</span></a></li>
+          <li><a href="category-muzzle.html"><span>🦳 Grey Muzzle</span><span class="cat-count">0</span></a></li>
+          <li><a href="category-leash.html"><span>🐾 Off Leash</span><span class="cat-count">0</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Easter Egg hint -->
+      <div class="sidebar-widget" style="text-align:center;">
+        <p style="font-size:0.8rem;color:#8B5E3C;font-style:italic;">
+          🐾 <em>Psst — Mango is hiding somewhere on this page. Find him for a surprise...</em>
+        </p>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <p><strong>Corgi Capital</strong> — Dispatches from Mango &nbsp;|&nbsp; corgi.capital</p>
+    <p style="margin-top:0.5rem;opacity:0.5;">Not financial advice. Mango is a dog. Past performance does not predict future treats.</p>
+  </footer>
+
+  <!-- ============ EASTER EGG GAME MODAL ============ -->
+  <div id="game-modal">
+    <h2>🐾 CORGI RUN</h2>
+    <p class="game-subtitle">Press SPACE or tap to jump. Avoid the falling Bloomberg terminals!</p>
+    <canvas id="game-canvas" width="600" height="200"></canvas>
+    <div id="game-score">Score: 0</div>
+    <button id="game-close">× Close</button>
+  </div>
+
+  <script src="src/game.js"></script>
+  <script>
+    // Easter egg: click the header corgi
+    document.getElementById('header-corgi').addEventListener('click', function(e) {
+      e.preventDefault();
+      openGame();
+    });
+  </script>
+
+</body>
+</html>

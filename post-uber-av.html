@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Is Uber Actually a Way to Play the AV Trend? — Corgi Capital</title>
+  <link rel="stylesheet" href="src/styles/main.css" />
+  <link rel="icon" type="image/svg+xml" href="public/images/favicon.svg" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-area">
+        <svg class="logo-corgi" id="header-corgi" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="50" cy="65" rx="32" ry="20" fill="#E8732A"/>
+          <ellipse cx="50" cy="38" rx="22" ry="20" fill="#D4A843"/>
+          <polygon points="30,28 22,8 38,22" fill="#E8732A"/>
+          <polygon points="70,28 78,8 62,22" fill="#E8732A"/>
+          <ellipse cx="50" cy="46" rx="13" ry="9" fill="#FDF0D5"/>
+          <circle cx="43" cy="36" r="3" fill="#1A1208"/>
+          <circle cx="57" cy="36" r="3" fill="#1A1208"/>
+          <circle cx="44.5" cy="34.8" r="1" fill="white"/>
+          <circle cx="58.5" cy="34.8" r="1" fill="white"/>
+          <ellipse cx="50" cy="43" rx="4" ry="2.5" fill="#5C3A1E"/>
+          <path d="M46,47 Q50,51 54,47" stroke="#5C3A1E" stroke-width="1.5" fill="none"/>
+          <rect x="28" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+          <rect x="42" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+          <rect x="56" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
+          <rect x="68" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
+          <path d="M82,60 Q96,50 92,38" stroke="#D4A843" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <ellipse cx="50" cy="72" rx="18" ry="10" fill="#FDF0D5" opacity="0.6"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">Corgi Capital</span>
+          <span class="logo-subtitle">Mango's Family Office</span>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html">All Posts</a>
+        <a href="category-pack.html" class="active">🔗 The Pack</a>
+        <a href="category-picks.html">📈 Mango's Picks</a>
+        <a href="category-zoomies.html">🏃 Zoomies</a>
+        <a href="category-hydrant.html">🗽 Fire Hydrant</a>
+        <a href="category-muzzle.html">🦳 Grey Muzzle</a>
+        <a href="category-leash.html">🐾 Off Leash</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="post-page">
+
+    <div class="post-page-header">
+      <div class="post-meta" style="margin-bottom:1rem;">
+        <span class="post-category cat-pack">🔗 The Pack</span>
+        <span class="post-date">February 19, 2026</span>
+      </div>
+      <h1>Is Uber Actually a Way to Play the AV Trend?</h1>
+      <div class="paw-divider">🐾 🐾 🐾</div>
+    </div>
+
+    <div class="post-page-body">
+
+      <p>
+        The robots are coming for everyone's jobs — including, apparently, Uber drivers.
+        Waymo is expanding. Tesla Robotaxi is looming. The bears have convinced themselves
+        that Uber is simply a dead man walking, a middleman about to be disintermediated
+        out of existence by the autonomous vehicle revolution.
+      </p>
+
+      <p>
+        Mango respectfully disagrees — though he acknowledges the question is genuinely hard.
+      </p>
+
+      <!-- PLACEHOLDER: Add your commentary here -->
+      <p style="background:#FDF6EC;border-left:4px solid #E8732A;padding:1rem 1.25rem;border-radius:0 8px 8px 0;font-style:italic;color:#5C3A1E;">
+        <strong>📝 Mango's Take:</strong> [Your commentary goes here — add a few sentences about whether you think Uber is a good way to play the AV trend. Do you think it's a platform play that survives? A value trap? Is the market overreacting to Waymo?]
+      </p>
+
+      <p>
+        The WSJ piece makes the argument that Uber's role as a demand aggregator —
+        the thing that actually finds and routes riders — doesn't disappear just because
+        the car drives itself. That's worth taking seriously.
+      </p>
+
+      <a href="https://www.wsj.com/tech/uber-latest-victim-of-disruption-panic-still-has-role-in-robotaxis-7cb07d60?st=ooqusS&reflink=desktopwebshare_permalink" target="_blank" rel="noopener" class="source-link">
+        📰 Read the full WSJ article (gift link) →
+      </a>
+
+    </div>
+
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid #DDD0BC;">
+      <a href="index.html" style="color:#E8732A;text-decoration:none;font-size:0.85rem;font-weight:600;">← Back to all posts</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p><strong>Corgi Capital</strong> — Dispatches from Mango &nbsp;|&nbsp; corgi.capital</p>
+    <p style="margin-top:0.5rem;opacity:0.5;">Not financial advice. Mango is a dog. Past performance does not predict future treats.</p>
+  </footer>
+
+  <div id="game-modal">
+    <h2>🐾 CORGI RUN</h2>
+    <p class="game-subtitle">Press SPACE or tap to jump. Avoid the Bloomberg terminals!</p>
+    <canvas id="game-canvas" width="600" height="200"></canvas>
+    <div id="game-score">Score: 0</div>
+    <button id="game-close">× Close</button>
+  </div>
+
+  <script src="src/game.js"></script>
+  <script>
+    document.getElementById('header-corgi').addEventListener('click', function(e) {
+      e.preventDefault();
+      openGame();
+    });
+  </script>
+
+</body>
+</html>

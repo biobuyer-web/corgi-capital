@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/public/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "🔗 The Pack (Links & Reads)", value: "pack" }
+          - { label: "📈 Mango's Picks (Stock Ideas)", value: "picks" }
+          - { label: "🏃 Zoomies (Fitness)", value: "zoomies" }
+          - { label: "🗽 Fire Hydrant (NYC Life)", value: "hydrant" }
+          - { label: "🦳 Grey Muzzle (Ageing)", value: "muzzle" }
+          - { label: "🐾 Off Leash (Misc)", value: "leash" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "External Link URL (optional)", name: "link", widget: "string", required: false, hint: "Paste a WSJ, Bloomberg, or other link here if this is a link post" }
+      - { label: "External Link Title (optional)", name: "linkTitle", widget: "string", required: false }
+      - { label: "Excerpt / Teaser", name: "excerpt", widget: "text", hint: "1-2 sentence preview shown on the homepage" }
+      - { label: "Body / Commentary", name: "body", widget: "markdown" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false, required: false }
