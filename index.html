@@ -68,38 +68,44 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <svg class="hero-corgi" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="cursor:pointer;" title="Click for a surprise!">
-      <!-- Corgi body -->
-      <ellipse cx="50" cy="65" rx="32" ry="20" fill="#E8732A"/>
-      <!-- Corgi head -->
-      <ellipse cx="50" cy="38" rx="22" ry="20" fill="#D4A843"/>
-      <!-- Ears -->
-      <polygon points="30,28 22,8 38,22" fill="#E8732A"/>
-      <polygon points="70,28 78,8 62,22" fill="#E8732A"/>
-      <!-- Face mask -->
-      <ellipse cx="50" cy="46" rx="13" ry="9" fill="#FDF0D5"/>
-      <!-- Eyes -->
-      <circle cx="43" cy="36" r="3" fill="#1A1208"/>
-      <circle cx="57" cy="36" r="3" fill="#1A1208"/>
-      <circle cx="44.5" cy="34.8" r="1" fill="white"/>
-      <circle cx="58.5" cy="34.8" r="1" fill="white"/>
-      <!-- Nose -->
-      <ellipse cx="50" cy="43" rx="4" ry="2.5" fill="#5C3A1E"/>
-      <!-- Mouth -->
-      <path d="M46,47 Q50,51 54,47" stroke="#5C3A1E" stroke-width="1.5" fill="none"/>
-      <!-- Legs -->
-      <rect x="28" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
-      <rect x="42" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
-      <rect x="56" y="80" width="10" height="12" rx="5" fill="#E8732A"/>
-      <rect x="68" y="78" width="10" height="14" rx="5" fill="#E8732A"/>
-      <!-- Tail wagging -->
-      <path d="M82,60 Q96,50 92,38" stroke="#D4A843" stroke-width="6" fill="none" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="-10 82 60" to="10 82 60" dur="0.4s" repeatCount="indefinite" additive="sum"/>
-      </path>
-      <!-- Belly patch -->
-      <ellipse cx="50" cy="72" rx="18" ry="10" fill="#FDF0D5" opacity="0.6"/>
-      <!-- Tiny tie (because he's a serious investor) -->
-      <path d="M48,58 L50,68 L52,58 L51,55 L49,55 Z" fill="#C0392B"/>
+    <svg class="hero-corgi" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="cursor:pointer;" title="Click for a surprise!">
+      <!-- Circular badge background -->
+      <circle cx="60" cy="60" r="58" fill="#FDF6EC" stroke="#D4A843" stroke-width="3"/>
+      <!-- Animated ear (back ear, slight wiggle) -->
+      <g id="hero-ear-back">
+        <polygon points="30,52 18,20 44,40" fill="#C85E1F"/>
+        <polygon points="32,50 22,25 42,41" fill="#E8732A"/>
+        <animateTransform attributeName="transform" type="rotate" from="-3 30 52" to="3 30 52" dur="0.8s" repeatCount="indefinite" additive="sum"/>
+      </g>
+      <!-- Neck / chest (side profile) -->
+      <ellipse cx="58" cy="95" rx="22" ry="16" fill="#E8732A"/>
+      <!-- White chest patch -->
+      <ellipse cx="62" cy="100" rx="12" ry="9" fill="#FDF0D5" opacity="0.85"/>
+      <!-- Head (side profile, facing right) -->
+      <ellipse cx="62" cy="60" rx="28" ry="26" fill="#D4A843"/>
+      <!-- Snout / muzzle (lighter, protruding right) -->
+      <ellipse cx="82" cy="68" rx="14" ry="10" fill="#FDF0D5"/>
+      <!-- Forehead white blaze -->
+      <ellipse cx="65" cy="48" rx="8" ry="6" fill="#FDF0D5" opacity="0.6"/>
+      <!-- Front ear -->
+      <g id="hero-ear-front">
+        <polygon points="72,42 82,14 90,38" fill="#C85E1F"/>
+        <polygon points="73,42 81,18 88,38" fill="#E8732A"/>
+        <animateTransform attributeName="transform" type="rotate" from="2 72 42" to="-2 72 42" dur="0.8s" repeatCount="indefinite" additive="sum"/>
+      </g>
+      <!-- Eye (side profile, right-facing) -->
+      <circle cx="74" cy="56" r="4.5" fill="#1A1208"/>
+      <circle cx="75.5" cy="54.5" r="1.5" fill="white"/>
+      <!-- Nose (right-facing, tip of snout) -->
+      <ellipse cx="93" cy="67" rx="4" ry="3" fill="#1A1208"/>
+      <!-- Nostril highlight -->
+      <circle cx="91.5" cy="65.5" r="1" fill="#5C3A1E"/>
+      <!-- Mouth / smile -->
+      <path d="M91,70 Q95,74 92,76" stroke="#5C3A1E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Tongue -->
+      <ellipse cx="92" cy="77" rx="3" ry="2.5" fill="#E05C5C"/>
+      <!-- Tiny tie (serious investor) -->
+      <path d="M54,84 L56,96 L58,84 L57,81 L55,81 Z" fill="#C0392B"/>
     </svg>
     <h1>Corgi <span>Capital</span></h1>
     <p class="hero-tagline">"Small dog. Big thoughts. Excellent risk-adjusted returns."</p>
