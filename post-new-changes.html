@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Off Leash — Corgi Capital</title>
+  <title>New Changes Thanks to Claude — Corgi Capital</title>
   <link rel="stylesheet" href="/src/styles/main.css" />
   <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
 </head>
@@ -49,40 +49,61 @@
     </div>
   </header>
 
-  <div style="max-width:1100px;margin:0 auto;padding:3rem 2rem;">
-    <div style="border-left:5px solid #C0392B;padding-left:1.5rem;margin-bottom:2.5rem;">
-      <h1 style="font-family:'Playfair Display',serif;font-size:2.2rem;color:#1A1208;">🐾 Off Leash</h1>
-      <p style="color:#5C3A1E;font-size:0.95rem;margin-top:0.5rem;">Whatever is on Mango's mind. No filter, no agenda — just whatever comes out.</p>
+  <div class="post-page">
+
+    <div class="post-page-header">
+      <div class="post-meta" style="margin-bottom:1rem;">
+        <span class="post-category cat-leash">🐾 Off Leash</span>
+        <span class="post-date">February 21, 2026</span>
+      </div>
+      <h1>New Changes Thanks to Claude</h1>
+      <div class="paw-divider">🐾 🐾 🐾</div>
     </div>
 
-    <div class="feed">
-      <article class="post-card cat-leash">
-        <div class="post-meta">
-          <span class="post-category" style="--category-color:#C0392B;">🐾 Off Leash</span>
-          <span class="post-date">February 21, 2026</span>
-        </div>
-        <h2><a href="post-new-changes.html">New Changes Thanks to Claude</a></h2>
-        <p class="post-excerpt">
-          Thanks to Claude, today we added a visitor counter, the ability to comment on posts,
-          and a contact form so you can get in touch. Hope you enjoy!
-        </p>
-        <a href="post-new-changes.html" class="read-more">Read more →</a>
-      </article>
+    <div class="post-page-body">
 
-      <article class="post-card cat-leash">
-        <div class="post-meta">
-          <span class="post-category" style="--category-color:#C0392B;">🐾 Off Leash</span>
-          <span class="post-date">February 20, 2026</span>
-        </div>
-        <h2><a href="post-first-website.html">Mango's First Website</a></h2>
-        <p class="post-excerpt">
-          Mango wishes to express deep and genuine gratitude to Claude Code, without whom none of this would exist.
-          The entire site was built in maybe an hour or two, with Mango simply following clear step-by-step instructions.
-          This is Mango's first website. Very proud. Still a dog.
-        </p>
-        <a href="post-first-website.html" class="read-more">Read more →</a>
-      </article>
+      <p>
+        Thanks to Claude, today we added a visitor counter, the ability to comment on posts,
+        and a contact form so you can get in touch. Hope you enjoy!
+      </p>
+
+      <p>
+        As always, Mango did none of the technical work. Claude did. Mango supervised from
+        a comfortable position on the couch and occasionally asked clarifying questions.
+        This is called <em>delegation</em>, and it is a core competency of any good CIO.
+      </p>
+
+      <p>
+        If you have thoughts, tips, or just want to tell Mango he's a good boy, head over
+        to the <a href="about.html" style="color:#E8732A;">About page</a> and use the contact form.
+        Comments are now open on every post. The visitor counter is in the sidebar on the homepage.
+        All very exciting.
+      </p>
+
     </div>
+
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid #DDD0BC;">
+      <a href="index.html" style="color:#E8732A;text-decoration:none;font-size:0.85rem;font-weight:600;">← Back to all posts</a>
+    </div>
+
+    <!-- ============ COMMENTS ============ -->
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid #DDD0BC;">
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https://corgi.capital/post-new-changes.html';
+          this.page.identifier = 'post-new-changes';
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://corgi-capital.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view comments.</noscript>
+    </div>
+
   </div>
 
   <footer>
